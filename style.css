@@ -1,0 +1,110 @@
+body{
+    margin: 0%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(img/Background.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+    overflow-x: hidden;
+}
+/*Home Page Design*/
+.background{
+    width: 100%;
+}
+header{
+    padding: 10px;
+    background-color: #121212;
+    color: white;
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+}
+#game_logo{
+    max-width: 10%;
+    margin-left: 50px;
+}
+#header_selection{
+    list-style-type: none;
+    font-weight: bold;
+    position: absolute;
+    right: 50vh;
+}
+.selections{
+    display: inline-block;
+    margin-right: 50px;
+}
+#header_selection a{
+    text-decoration: none;
+    color: white;
+}
+#official_website a{
+    text-decoration: none;
+    color: white;
+}
+#official_website{
+    padding: 10px;
+    display: inline-block;
+    font-weight: bold;
+    border-radius: 10px;
+    
+    position: absolute;
+    bottom: 0px;
+    right: 50px;
+    margin-bottom: 50px;
+
+    background-color: black;
+    border-color: white;
+}
+/*Home Page Design*/
+
+/*Characters Page Design*/
+#characters, #story{
+    height: 100%;
+    width: auto;
+}
+.world_container{
+    display: inline-block;
+    justify-content: center;
+}
+.elements_container{
+    padding: 20px;
+    margin-left: 50px;
+    justify-content: center;
+    display: inline-block;
+}
+.world_img_container{
+    display: inline-block;
+}
+.world_image{
+    background-color: white;
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    margin: 10px;
+}
+.world_name{
+    font-weight: bold;
+    color: white;
+    font-size: x-small;
+    text-align: center;
+}
+#vertical_line{
+    width: 2px;
+    height: 400px;
+    background-color: white;
+    margin: 20px;
+}
+.social-logo{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    display: inline-block;
+    margin: 20px;
+    background-color: white;
+}
+/*Characters Page Design*/
+
+/*Story Page Design*/
+
+/*Story Page Design*/
+
