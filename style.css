@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     margin: 0%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -7,104 +10,332 @@ body{
     background-size: cover;
     overflow-x: hidden;
 }
-/*Home Page Design*/
-.background{
-    width: 100%;
+hr{
+    height: 2px;
+    color: white;
+    background-color: white;
 }
+h2{
+    font-size: smaller;
+    margin-left: 50px;
+    margin-right: 50px;
+    color: white; 
+}
+p{
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+/*Related Elements/Classes*/
+.page-title-container{
+    color: white;
+    background: rgb(18, 18, 18, 0.5);
+    font-weight: 50px;
+    border-left: thick solid #CAAF85;
+    display: inline-block;
+    padding: 10px;
+    border-top-right-radius: 20px;
+}
+#character-name-container{
+    padding: 10px;
+}
+.character-name, .story-name{
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 20vh;
+}
+.pages{
+    padding: 40px;
+}
+/*Related Elements*/
+
+/*Navbar Design*/
 header{
     padding: 10px;
     background-color: #121212;
-    color: white;
+    align-items: center;
     display: inline-flex;
     width: 100%;
-    align-items: center;
+
+    position: sticky;
+    top: 0;
+    overflow: hidden;
 }
-#game_logo{
-    max-width: 10%;
+#navbar-game-logo{
+    max-width: 20%;
     margin-left: 50px;
 }
-#header_selection{
+#navbar-list-con{
     list-style-type: none;
-    font-weight: bold;
-    position: absolute;
-    right: 50vh;
 }
-.selections{
-    display: inline-block;
-    margin-right: 50px;
-}
-#header_selection a{
+#navbar-list-con a{
     text-decoration: none;
     color: white;
+    border-bottom: 4px solid transparent;
+    display: block;
+    text-align: center;
 }
-#official_website a{
+#navbar-list-con a:hover{
+    border-bottom: 4px solid #5C90DC;
+    color: #5C90DC;
+}
+.navbar-list{
+    display: inline-block;
+    margin-left: 50px;
+    font-weight: bold;
+    cursor: pointer;
+}
+/*Navbar Design*/
+
+/*Home Page Design*/
+#home-background{
+    max-width: 100%;
+}
+#official-website-button a{
     text-decoration: none;
+    font-weight: bold;
     color: white;
 }
-#official_website{
-    padding: 10px;
-    display: inline-block;
-    font-weight: bold;
-    border-radius: 10px;
-    
+#official-website-button{
+    background-color: black;
+    border-color: white;
+    padding: 40px;
+    border-radius: 20px;
+
     position: absolute;
     bottom: 0px;
     right: 50px;
-    margin-bottom: 50px;
-
-    background-color: black;
-    border-color: white;
 }
 /*Home Page Design*/
 
-/*Characters Page Design*/
-#characters, #story{
-    height: 100%;
-    width: auto;
+/*Cast Page Design*/
+#cast-page-elements{
+    display: inline-flex;
 }
-.world_container{
+#cast-world, #story-world{
     display: inline-block;
-    justify-content: center;
-}
-.elements_container{
-    padding: 20px;
     margin-left: 50px;
-    justify-content: center;
-    display: inline-block;
-}
-.world_img_container{
-    display: inline-block;
-}
-.world_image{
-    background-color: white;
-    height: 100px;
-    width: 100px;
-    border-radius: 100px;
-    margin: 10px;
-}
-.world_name{
-    font-weight: bold;
-    color: white;
-    font-size: x-small;
     text-align: center;
 }
-#vertical_line{
-    width: 2px;
-    height: 400px;
-    background-color: white;
-    margin: 20px;
+#cast-world a, #story-world a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
 }
-.social-logo{
+#vertical-line{
+    margin-left: 20px;
+    width: 3px;
+    height: 100vh;
+    background-color: white;
+}
+#character-container{
+    margin-left: 50px;
+}
+#character-slideshow-container{
+    margin: 50px;
+    padding: 10px;
+    width: 150vh;
+    background: rgb(18, 18, 18, 0.5);
+}
+#character-selection-container{
+    background: rgb(28, 40, 73, 0.4);
+}
+#character-detail-container, #story-info{
+    padding: 10px;
+    margin: 5px;
+}
+.character-profile{
     height: 50px;
     width: 50px;
     border-radius: 50px;
     display: inline-block;
-    margin: 20px;
+    padding: 10px;
+    margin: 10px;
+}
+.character-info{
+    width: 80vh;
+}
+.character-img{
+    max-width: 80vh;
+    position: absolute;
+}
+.cast-world-img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+/*Cast Page Design*/
+
+/*Story Page Design*/
+.story-world-img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
     background-color: white;
 }
-/*Characters Page Design*/
-
+#story-container{
+    display: inline-flex;
+    align-items: center;
+}
+#story-title-container{
+    width: 50vh;
+}
+#story-elements-container{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+#story-world{
+    padding: 20px;
+    margin: 20px;
+}
+#story-text-container{
+    background: rgb(18, 18, 18, 0.5);
+    padding: 30px;
+    border-top-right-radius: 50px;
+}
+#story-world, #story-image-container{
+    margin-right: 50px;
+}
+#story-title{
+    border-left: #CAAF85 solid thick;
+}
+#story-image{
+    border-color: rgb(28, 40, 73, 40%) solid thick;
+    border-top-right-radius: 100px;
+}
+#story-chapters-container{
+    background: rgb(28, 40, 73, 0.4);
+    padding: 30px;
+}
+#left{
+    margin-right: 210px;
+}
+.buttons{
+    height: 50px;
+    width: 40px;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: white;
+}
 /*Story Page Design*/
 
-/*Story Page Design*/
+/*Gallery Page Design*/
+.gallery-img{
+    height: 150px;
+    max-width: 100%;
+    border-radius: 100px;
+    margin-right: 40px;
+}
+.gallery-text{
+    font-weight: bold;
+    font-size: 50px;
+}
+.gallery{
+    height: fit-content;
+    width: fit-content;
+    background: rgb(28, 40, 73, 0.4);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 60px;
+}
+#gallery-container{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+/*Gallery Page Design*/
 
+/*Footer Page Design*/
+footer{
+    background-color: #121212;
+    padding: 20px;
+}
+.social-media-logos{
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border-radius: 50px;
+    display: inline-block;
+    margin: 10px;
+}
+#footer-container{
+    display: inline-flex;
+    align-items: center;
+}
+#footer-game-logo{
+    max-width: 20%;
+    margin: 40px;
+}
+#footer-vertical-line{
+    height: 40px;
+    width: 2px;
+    background-color: white;
+    margin: 40px;
+}
+#footer-text{
+    font-weight: bold;
+}
+/*Footer Page Design*/
+
+/*Music Page Design*/
+.music{
+    height: 200px;
+    width: 200px;
+    border-radius: 200px;
+    background-color: white;
+    margin-right: 50px;
+    margin-left: 50px;
+    border: 4px solid white;
+}
+.music-name{
+    display: inline-block;
+    text-align: center;
+}
+#music-container{
+    display: grid;
+    grid-template-columns: auto auto auto;   
+    text-align: center;
+}
+#music-page-elements{
+    display: inline-flex;
+    margin: 50px;
+}
+.music-img{
+    max-height: 150px;
+    max-width: fit-content;
+    border-radius: 100px;
+}
+/*Music Page Design*/
+
+/*Wallpaper Page Design*/
+.wallpapers{
+    height: 250px;
+    width: 300px;
+    background-color: white;
+    border-top-right-radius: 50px;
+}
+#wallpaper-elements{
+    display: inline-flex;
+}
+#save-button{
+    height:80px;
+    width: 200px;
+    border-radius: 20px;
+
+    background-color: #121212;
+    color: white;
+    border-color: white;
+}
+/*Wallpaper Page Design*/
+
+/*Videos Page Design*/
+.videos{
+    height: 300px;
+    width: 300px;
+    background-color: white;
+    border-radius: 50px;
+}
+#video-elements{
+    display: inline;
+}
+/*Videos Page Design*/

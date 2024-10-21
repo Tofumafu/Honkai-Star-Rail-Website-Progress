@@ -4,72 +4,197 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>AIF: Honkai Star Rail</title>
+    <title>Honkai Star Rail: Fan Website</title>
 </head>
 <body>
     <script src="/script.js"></script>
-    <!-- Navigational Bar -->
-    <header class="home_page" id="first_section">
-        <img src="img/Logo.png" id="game_logo">
-        <ul id="header_selection">
-            <li class="selections"><a href="#home">Home</a></li>
-            <li class="selections"><a href="#characters">Characters</a></li>
-            <li class="selections"><a href="story">Story</a></li>
-            <li class="selections"><a href="gallery">Gallery</a></li>
-        </ul>
+
+    <!-- Navigation Bar -->
+    <header>
+        <div class="logo-container">
+            <img id="navbar-game-logo" src="img\Logo.png">
+        </div>
+        <nav>
+            <ul id="navbar-list-con">
+                <li class="navbar-list"><a href="#home-page">Home</a></li>
+                <li class="navbar-list"><a href="#cast-page">Cast</a></li>
+                <li class="navbar-list"><a href="#story-page">Story</a></li>
+                <li class="navbar-list"><a href="#gallery-page">Gallery</a></li>
+            </ul>
+        </nav>
     </header>
-    <!-- Navigational Bar -->
+    <!-- Navigation Bar -->
 
-    <div id="home">
-        <!-- Home Page Background Photo -->
-    <div class="home_background">
-        <img class="background" src="img/Penacony.jpg">
-    <!-- Home Page Background Photo-->
-
-    <!-- Button to Official Website -->
-    <button id="official_website">
-        <p>
-            <a href="https://hsr.hoyoverse.com/en-us/" target="_self">Visit Original Website</a>
-        </p>
-    </button>
-    <!-- Button to Official Website -->
+    <!-- Home Page -->
+    <div id="home-page">
+        <div id="home-background-container">
+            <img id="home-background" src="img\Penacony.jpg">
+        </div>
+        <button id="official-website-button">
+            <a href="https://hsr.hoyoverse.com/en-us/home" target="_self">
+                Visit The Original Website
+            </a>
+        </button>
     </div>
-    </div>
+    <!-- Home Page -->
 
-    <!-- Character Page -->
-    <div id="characters">
+    <!-- Cast Page -->
+    <div id="cast-page" class="pages">
+        <div id="cast-page-elements">
 
-        <div class="elements_container"> 
-            <div class="world_container">
-                <div class="world_img_container">
-                    <img class="world_image" src="img\HertaSpaceStation.png">
-                    <p class="world_name">Herta Space Station</p>
-                    <img class="world_image" src="img\JariloVI.png">
-                    <p class="world_name">Jarilo-VI</p>
-                    <img class="world_image" src="img\Luofu.png">
-                    <p class="world_name">Zianzhou: Luofu</p>
+            <div id="cast-world-container">
+                <div id="cast-world">
+                    <a href="">
+                        <img class="cast-world-img" src="img\HertaSpaceStation.png">
+                        <p class="cast-world-names">Herta Space Station</p>
+                    </a>
+                    <a href="">
+                        <img class="cast-world-img" src="img\JariloVI.png">
+                        <p class="cast-world-names">Jarilo-VI</p>
+                    </a>
+                    <a href="">
+                        <img class="cast-world-img" src="img\Luofu.png">
+                        <p class="cast-world-names">Luofu</p>
+                    </a>
                 </div>
-                <div id="vertical_line"></div>
             </div>
-            
-            <div class="character_slideshow_container">
-                <div class="character_slideshow">
-                    <img src="">
+    
+            <div id="vertical-line"></div>
+
+            <div id="character-container">
+                <div class="page-title-container">
+                    <h2>Character</h2>
+                </div>
+                <div id="character-slideshow-container">
+                    <div class="character-info">
+                        <div id="character-name-container">
+                            <p class="character-name">Gepard</p>
+                        </div>
+                        <hr>
+                        <div id="character-detail-container">
+                            <p class="character-detail">
+                                The honorable and upstanding captain of the Silvermane Guards who bears the noble Landau family name. 
+                                In the frost-whipped city of Belobog, life can still go on in normality... 
+                                This is in no small part thanks to Gepard and his Silvermane Guards who 
+                                protect the peace of everyday life.
+                            </p>
+                        </div>
+                    </div>
+                    <div id="character-selection-container">
+                        <img id="gepard" class="character-profile" src="image\gepard.png">
+                        <img id="gepard" class="character-profile" src="image\gepard.png">
+                        <img id="gepard" class="character-profile" src="image\gepard.png">
+                        <img id="gepard" class="character-profile" src="image\gepard.png">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Character Page -->
+    <!-- Cast Page -->
+
     <!-- Story Page -->
-     <div id="story">
-        
+     <div id="story-page" class="pages">
+
+        <div id="story-elements-container">
+            <div class="page-title-container" id="story-title-container">
+                <h2>Herta Space Station</h2>
+            </div>
+            <div id="story-heading-container">
+                <p id="story-heading">Select Next For The Next World</p>
+                <hr>
+            </div> 
+        </div>
+
+        <div id="story-container">
+            <div id="story-world">
+                <a href="">
+                    <img class="story-world-img" src="img\HertaSpaceStation.png">
+                    <p class="story-world-names">Herta Space Station</p>
+                </a>
+                <a href="">
+                    <img class="story-world-img" src="img\JariloVI.png">
+                    <p class="story-world-names">Jarilo-VI</p>
+                </a>
+                <a href="">
+                    <img class="story-world-img" src="img\Luofu.png">
+                    <p class="story-world-names">Luofu</p>
+                </a>
+                <a href="">
+                    <img class="story-world-img" src="img\Penacony.jpg">
+                    <p class="story-world-names">Penacony</p>
+                </a>
+            </div>
+
+            <div id="story-image-container">
+                <img id="story-image" src="img\Mission_Chaos_In_the_Deep.webp">
+            </div>
+
+            <div id="story-text-container">
+                <div id="story-title">
+                    <p class="story-name">Chaos In The Deep</p>
+                </div>
+                <hr>
+                <div id="story-info">
+                    <p>The woman sauntering elegantly across the invasion site is a mystery. 
+                        She mocks the victims, while also ruthlessly eliminating their oppressors.
+                        Over their comms, the mysterious helper reveals that the two seem to have some sort of agenda.
+                        They are fully aware that they are not the protagonists of this story.
+                        Now that everything is ready, it is time to awaken and embark on your journey.
+                    </p>
+                </div>
+                <div id="story-chapters-container">
+                    <button id="left" class="buttons"></button>
+                    <button id="right" class="buttons"></button>
+                </div>
+            </div>
+        </div>
      </div>
     <!-- Story Page -->
+
+    <!-- Gallery Page -->
+    <div id="gallery-page" class="pages">
+        <div id="gallery-container">
+            <a href="music.html">
+                <div id="music-container" class="gallery">
+                    <img src="gallery img\Item_Phonograph_Record.webp" class="gallery-img">
+                    <p class="gallery-text">Music</p>
+                </div>
+            </a>
+            <a href="videos.html">
+                <div id="music-container" class="gallery">
+                    <img src="gallery img\gallery.jpg" class="gallery-img">
+                    <p class="gallery-text">Videos</p>
+                </div>
+            </a>
+            <a href="wallpaper.html">
+                <div id="music-container" class="gallery">
+                    <img src="gallery img\background.webp" class="gallery-img">
+                    <p class="gallery-text">Wallpaper</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- Gallery Page -->
+
+    <!-- Footer Page -->
      <footer>
-        <div class="social-logo"></div>
-        <div class="social-logo"></div>
-        <div class="social-logo"></div>
-        <div class="social-logo"></div>
+        <div id="social-media-containers">
+            <div class="social-media-logos"></div>
+            <div class="social-media-logos"></div>
+            <div class="social-media-logos"></div>
+            <div class="social-media-logos"></div>
+        </div>
+
+        <hr>
+
+        <div id="footer-container">
+            <img id="footer-game-logo" src="img\Logo.png">
+
+            <div id="footer-vertical-line"></div>
+            
+            <p id="footer-text"> NOT THE OFFICIAL WEBSITE | FAN WEBSITE</p>
+        </div>
      </footer>
+    <!-- Footer Page -->
 </body>
 </html>
